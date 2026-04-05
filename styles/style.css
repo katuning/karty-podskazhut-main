@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  color: var(--text-color);
+  font-family: var(--main-font);
+  background-color: var(--bg-color);
+  min-inline-size: 360px;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+:root {
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway;
+  --accent-font: 'STIX Two Text';
+}
+
+.header {
+  padding-top: 10%;
+}
+
+.heading {
+  font-family: var(--accent-font);
+  line-height: 90%;
+  text-align: center;
+}
+
+.content-section {
+  padding-right: 5vi;
+  padding-left: 5vi;
+}
+
+.header__title {
+  margin-bottom: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  margin-top: 7%;
+  margin-bottom: 2.5%;
+  font-size: 30px;
+}
+
+.content__text-block {
+  font-size: 18px;
+}
+
+.content__text-block .content__paragraph:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+.content__blockquote {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list {
+  padding-inline-start: 40px;
+  list-style: none;
+}
+
+.content__list .content__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.content__list-item {
+  position: relative;
+}
+
+.content__list-item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/marker-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 25px;
+ 
+}
