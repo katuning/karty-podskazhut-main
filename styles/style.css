@@ -6,7 +6,7 @@
   --accent-font: "STIX Two Text";
 }
 
-.theme-dark {
+.theme_dark {
   --bg-color: #312a4e;
   --text-color: #f3efec;
   --accent-color: transparent;
