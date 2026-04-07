@@ -6,17 +6,24 @@
   --accent-font: "STIX Two Text";
 }
 
+.theme-dark {
+  --bg-color: #312a4e;
+  --text-color: #f3efec;
+  --accent-color: transparent;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+
 .page {
   margin: 0;
-  color: var(--text-color, #312a4e);
+  color: var(--text-color);
   font-family: var(--main-font);
-  background-color: var(--bg-color, #f3efec);
+  background-color: var(--bg-color);
   min-inline-size: 360px;
 }
 
@@ -163,7 +170,7 @@ a {
   padding-left: 40px;
 }
 
-.content__list-item::before {
+.content__list li::before {
   content: "";
   position: absolute;
   top: 3px;
@@ -176,7 +183,7 @@ a {
   background-size: contain;
 }
 
-.theme_dark .content__list-item::before {
+.theme_dark .content__list li::before {
   content: "";
   position: absolute;
   top: 3px;
