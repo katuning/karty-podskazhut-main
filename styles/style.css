@@ -209,7 +209,7 @@ a {
   background-color: var(--accent-color);
 }
 
-.theme-dark .content__text-block_type_first-lettered
+.theme_dark .content__text-block_type_first-lettered
   .content__paragraph:nth-child(1):first-letter {
   display: inline-block;
   margin-right: 1px;
@@ -273,7 +273,7 @@ a {
   inset-inline-start: -4px;
 }
 
-.theme-dark .colored-text::after {
+.theme_dark .colored-text::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -296,7 +296,7 @@ a {
 
 }
 
-.theme-dark {
+.theme_dark {
   --bg-color: #312a4e;
   --text-color: #f3efec;
   --accent-color: transparent;
